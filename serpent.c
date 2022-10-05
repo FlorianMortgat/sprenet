@@ -27,11 +27,11 @@ Note: most functions use a predetermined buffer size and do not
 check bounds. Check bounds before using them.
 */
 
-#include "serpent_constants.h"
 #include "stdint.h"
 #include "stdlib.h"
 #include "string.h"
 #include "time.h"
+#include "serpent_constants.h"
 
 /*
 NIBBLE0 and NIBBLE1 extract 4-bit nibbles from a byte.
@@ -524,22 +524,22 @@ void SC_round_inverse(SC *s, uint8_t round_n) {
 // equivalent output in the working python code).
 void DEBUG_chars(char *title, char *bytes, int size) {
   int i;
-  printf("%s\n", title);
+  //printf("%s\n", title);
   for (i = 0; i < size; i++) {
-    printf("%c", bytes[i] >= 32 ? bytes[i] : '*');
+    //printf("%c", bytes[i] >= 32 ? bytes[i] : '*');
   }
-  printf("\n");
+  //printf("\n");
 }
 
 void DEBUG_hex(char *title, char *bytes, int size) {
   int i;
-  printf("%s: ", title);
+  //printf("%s: ", title);
   for (i = 0; i < size; i++) {
-    if ((uint8_t)bytes[i] < 16)
-      printf("0");
-    printf("%x ", (uint8_t)bytes[i]);
+    if ((uint8_t)bytes[i] < 16);
+      //printf("0");
+    //printf("%x ", (uint8_t)bytes[i]);
   }
-  printf("\n");
+  //printf("\n");
 }
 
 void rotate_left_array(uint8_t *input, uint8_t places_bits,
