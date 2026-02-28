@@ -27,11 +27,12 @@ Note: most functions use a predetermined buffer size and do not
 check bounds. Check bounds before using them.
 */
 
-#include "serpent_constants.h"
 #include "stdint.h"
 #include "stdlib.h"
 #include "string.h"
 #include "time.h"
+#include "stdio.h"
+#include "serpent_constants.h"
 
 /*
 NIBBLE0 and NIBBLE1 extract 4-bit nibbles from a byte.
