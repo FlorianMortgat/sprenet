@@ -31,7 +31,7 @@ check bounds. Check bounds before using them.
 #include "stdlib.h"
 #include "string.h"
 #include "time.h"
-#include "stdio.h"
+//#include "stdio.h"
 #include "serpent_constants.h"
 
 /*
